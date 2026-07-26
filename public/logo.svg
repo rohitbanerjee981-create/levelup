@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E5A93B" />
+      <stop offset="50%" stop-color="#FDE08D" />
+      <stop offset="100%" stop-color="#C58515" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1E40AF" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Shield/Crest Foundation -->
+  <polygon points="250,40 430,110 400,340 250,470 100,340 70,110" fill="url(#blueGrad)" opacity="0.15" stroke="url(#goldGrad)" stroke-width="4"/>
+  <polygon points="250,55 415,120 385,330 250,450 115,330 85,120" fill="#0A1628" stroke="url(#blueGrad)" stroke-width="3"/>
+  
+  <!-- Majestic Lion Head Geometric Profile & Mane -->
+  <!-- Left Mane -->
+  <polygon points="250,130 180,95 140,150 200,180" fill="url(#goldGrad)" opacity="0.8"/>
+  <polygon points="140,150 95,210 165,240 200,180" fill="url(#goldGrad)" opacity="0.9"/>
+  <polygon points="95,210 115,290 180,295 165,240" fill="#D4AF37"/>
+  
+  <!-- Right Mane -->
+  <polygon points="250,130 320,95 360,150 300,180" fill="url(#goldGrad)" opacity="0.8"/>
+  <polygon points="360,150 405,210 335,240 300,180" fill="url(#goldGrad)" opacity="0.9"/>
+  <polygon points="405,210 385,290 320,295 335,240" fill="#D4AF37"/>
+
+  <!-- Center Face Structure -->
+  <polygon points="250,130 210,210 250,295 290,210" fill="#203354"/>
+  <!-- Eyes & Brow -->
+  <polygon points="210,210 170,225 190,250 220,230" fill="#FDE08D" filter="url(#glow)"/>
+  <polygon points="290,210 330,225 310,250 280,230" fill="#FDE08D" filter="url(#glow)"/>
+
+  <!-- Snout and Chin -->
+  <polygon points="250,295 220,260 215,330 250,360 285,330 280,260" fill="url(#goldGrad)"/>
+  
+  <!-- UPWARD ARROW Integrated -->
+  <g filter="url(#glow)">
+    <!-- Main Upward Arrow Stem emerging above crest -->
+    <polygon points="250,25 210,80 235,80 235,160 265,160 265,80 290,80" fill="url(#arrowGrad)"/>
+    <!-- Floating Wing Arrows -->
+    <polyline points="160,105 250,35 340,105" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
